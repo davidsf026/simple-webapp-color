@@ -1,0 +1,15 @@
+https://docs.okd.io/latest/architecture/networking/routes.html#route-specific-annotations
+
+add in annotation:
+haproxy.router.openshift.io/balance: roundrobin
+haproxy.router.openshift.io/disable_cookies: 'true'
+
+example:
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    haproxy.router.openshift.io/balance: roundrobin
+    haproxy.router.openshift.io/disable_cookies: 'true'
+    openshift.io/generated-by: OpenShiftWebConsole
+    openshift.io/host.generated: 'true
