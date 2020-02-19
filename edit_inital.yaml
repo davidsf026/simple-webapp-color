@@ -1,5 +1,7 @@
 https://docs.okd.io/latest/architecture/networking/routes.html#route-specific-annotations
 
+Edit Routes: ----
+
 add in annotation:
 haproxy.router.openshift.io/balance: roundrobin
 haproxy.router.openshift.io/disable_cookies: 'true'
